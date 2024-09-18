@@ -315,7 +315,7 @@ bot.command("showuser", async (ctx) => {
     let reply = "👥 User Emoji List:\n";
 
     settings.forEach((setting) => {
-      reply += `${setting.emoji} - ${setting.userId}\n`; // You can replace `userId` with `username` if you store usernames
+      reply += `${setting.emoji} - @${setting.username} - ${setting.userId}\n`; // You can replace `userId` with `username` if you store usernames
     });
 
     await ctx.reply(reply);
