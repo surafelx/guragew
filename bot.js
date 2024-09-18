@@ -79,7 +79,6 @@ bot.command("setemoji", async (ctx) => {
     try {
       await User.findOneAndUpdate(
         { userId: user.id },
-        { username: user.username },
         { emoji: emojiText },
         { upsert: true, new: true }
       );
