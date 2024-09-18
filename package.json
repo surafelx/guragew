@@ -1,0 +1,19 @@
+{
+  "name": "guragew",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "grammy": "^1.30.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.6.2"
+  },
+  "keywords": [],
+  "description": ""
+}
