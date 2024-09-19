@@ -434,8 +434,9 @@ bot.command("completechore", async (ctx) => {
 
   try {
     // Find the chore by description and mark it as completed
+
     const updatedChore = await Chore.findOneAndUpdate(
-      { chore: completeText, username: user.username }, // Find the chore assigned to this user
+      { chore: completeText }, // Find the chore assigned to this user
       { status: "completed" }, // Set the status to "completed"
       { new: true } // Return the updated chore
     );
